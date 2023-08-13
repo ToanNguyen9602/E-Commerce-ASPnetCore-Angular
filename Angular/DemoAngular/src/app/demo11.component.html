@@ -1,0 +1,91 @@
+<h3>Register</h3>
+<form method="post" [formGroup]="registerForm" (ngSubmit)="save()">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td>
+                <input type="text" formControlName="username">
+            </td>
+            <td>
+                <div *ngIf="registerForm.get('username').touched">
+                    <div *ngIf="registerForm.hasError('required', ['username'])" class="error">
+                        This field is required.
+                    </div>
+                    <div *ngIf="registerForm.hasError('minlength', ['username'])" class="error">
+                        Username phai it nhat 3 ki tu
+                    </div>
+                    <div *ngIf="registerForm.hasError('maxlength', ['username'])" class="error">
+                        Username toi da 10 ki tu
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" formControlName="password">
+            </td>
+            <td>
+                <div *ngIf="registerForm.get('password').touched">
+                    <div *ngIf="registerForm.hasError('required', ['password'])" class="error">
+                        This field is required.
+                    </div>
+                    <div *ngIf="registerForm.hasError('pattern', ['password'])" class="error">
+                        Password khong du do phuc tap
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" formControlName="email">
+            </td>
+            <td>
+                <div *ngIf="registerForm.get('email').touched">
+                    <div *ngIf="registerForm.hasError('required', ['email'])" class="error">
+                        This field is required.
+                    </div>
+                    <div *ngIf="registerForm.hasError('email', ['email'])" class="error">
+                        Email phai dung dinh dang
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Website</td>
+            <td>
+                <input type="text" formControlName="website">
+            </td>
+            <td>
+                <div *ngIf="registerForm.get('website').touched">
+                    <div *ngIf="registerForm.hasError('pattern', ['website'])" class="error">
+                        Khong dung dinh dang duong dan
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>
+                <input type="text" formControlName="age">
+            </td>
+            <td>
+                <div *ngIf="registerForm.get('age').touched">
+                    <div *ngIf="registerForm.hasError('min', ['age'])" class="error">
+                        Tuoi phai nho nhat la 18
+                    </div>
+                    <div *ngIf="registerForm.hasError('max', ['age'])" class="error">
+                        Tuoi phai toi da la 120
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Save" [disabled]="registerForm.invalid">
+            </td>
+        </tr>
+    </table>
+</form>

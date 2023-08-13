@@ -1,0 +1,75 @@
+<h3>Edit Product</h3>
+<ng-container *ngIf="editProductForm != null">
+    <form method="post" [formGroup]="editProductForm" (ngSubmit)="save()">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" formControlName="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="text" formControlName="price">
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>
+                    <input type="text" formControlName="quantity">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Description</td>
+                <td>
+                    <textarea cols="20" rows="5" formControlName="description"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Created</td>
+                <td>
+                    <input type="text" formControlName="created">
+                </td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <input type="checkbox" formControlName="status">
+                </td>
+            </tr>
+            <tr>
+                <td>Featured</td>
+                <td>
+                    <input type="checkbox" formControlName="featured">
+                </td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>
+                    <select formControlName="categoryId">
+                        <ng-container *ngIf="categories != null">
+                            <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}
+                            </option>
+                        </ng-container>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>File</td>
+                <td>
+                    <input type="file" (change)="selectFile($event)">
+                    <br>
+                    <img src="{{product.photo}}" width="70" height="70">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+        </table>
+    </form>
+</ng-container>
+<p-toast></p-toast>

@@ -1,0 +1,23 @@
+<h3>Keyup Event</h3>
+<input type="text" (keyup)="display($event)">
+<br><br>
+<input type="text" (keyup.enter)="display2($event)">
+<br><br>
+<input type="text" placeholder="C..." (keyup)="calculate($event)">
+<br>
+F: {{f}}
+<!-- F = C*1.8 + 32 -->
+<br><br>
+<input type="text" placeholder="a" (keyup)="calculate2($event)">
+<br><br>
+Area: {{area}}
+<br>
+Perimerter: {{perimeter}}
+<br><br>
+Username <input type="text" (keyup)="getUsername($event)">
+<br>
+Pasword <input type="password" (keyup)="getPassword($event)">
+<br>
+<input type="button" value="Login" (click)="login()">
+<br>
+{{msg}}

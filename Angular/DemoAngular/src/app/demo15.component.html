@@ -1,0 +1,62 @@
+<fieldset>
+    <legend>Search By Keyword</legend>
+    Keyword <input type="text" [(ngModel)]="keyword">
+    <br>
+    <input type="button" value="Search" (click)="searchByKeyword()">
+</fieldset>
+<br><br>
+<ng-container *ngIf="products != null">
+    <table border="1">
+        <tr>
+            <th>Action</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Created</th>
+            <th>Status</th>
+            <th>Featured</th>
+            <th>Photo</th>
+            <th>Category Id</th>
+            <th>
+                Category Name
+                <br>
+                <select (change)="searchByCategory($event)">
+                    <ng-container *ngIf="categories != null">
+                        <option value="-1">All</option>
+                        <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+                    </ng-container>
+                </select>
+            </th>
+        </tr>
+        <tr *ngFor="let product of products">
+            <td>
+                <a [routerLink]="['/edit-product', {id: product.id}]">Edit</a>
+                |
+                <input type="button" value="Delete" (click)="delete(product.id)">
+            </td>
+            <td>{{product.id}}</td>
+            <td>
+                <a [routerLink]="['/product-details-api', {id: product.id}]">{{product.name}}</a>
+            </td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.created}}</td>
+            <td>{{product.status}}</td>
+            <td>{{product.featured}}</td>
+            <td>
+                <a [routerLink]="['/product-details-api', {id: product.id}]">
+                    <img src="{{product.photo}}" width="70" height="70">
+                </a>
+            </td>
+            <td>{{product.categoryId}}</td>
+            <td>{{product.categoryName}}</td>
+        </tr>
+    </table>
+
+</ng-container>
+
+<p-confirmDialog [style]="{width: '50vw'}"></p-confirmDialog>
+<p-toast></p-toast>

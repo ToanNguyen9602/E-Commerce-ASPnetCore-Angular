@@ -1,0 +1,17 @@
+<h3>Change Event</h3>
+<select (change)="selectCategory($event)">
+    <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+</select>
+
+<h3>File</h3>
+<input type="file" (change)="selectFile($event)">
+
+<h3>Files</h3>
+<input type="file" multiple (change)="selectFiles($event)">
+
+<h3>Upload File</h3>
+Photo <input type="file" (change)="selectFileUpload($event)">
+<br>
+Photos <input type="file" (change)="selectFileUploads($event)" multiple>
+<br>
+<input type="button" value="Upload" (click)="upload()">

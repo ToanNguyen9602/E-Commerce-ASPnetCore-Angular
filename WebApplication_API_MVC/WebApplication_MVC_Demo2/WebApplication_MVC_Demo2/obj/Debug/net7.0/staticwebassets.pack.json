@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\6a3be7eb15e04be5b87b2cafc113a795.png",
+      "PackagePath": "staticwebassets\\images\\6a3be7eb15e04be5b87b2cafc113a795.png"
+    },
+    {
+      "Id": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb1.gif",
+      "PackagePath": "staticwebassets\\images\\thumb1.gif"
+    },
+    {
+      "Id": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb2.gif",
+      "PackagePath": "staticwebassets\\images\\thumb2.gif"
+    },
+    {
+      "Id": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb3.gif",
+      "PackagePath": "staticwebassets\\images\\thumb3.gif"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication_MVC_Demo2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication_MVC_Demo2.props",
+      "PackagePath": "build\\WebApplication_MVC_Demo2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication_MVC_Demo2.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication_MVC_Demo2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication_MVC_Demo2.props",
+      "PackagePath": "buildTransitive\\WebApplication_MVC_Demo2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

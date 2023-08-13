@@ -1,0 +1,59 @@
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>
+            Name
+            <br>
+            <input type="text" (keyup)="searchByKeyword($event)">
+        </th>
+        <th>Price</th>
+        <th>Photo</th>
+        <th>Category Id</th>
+        <th>
+            Category Name
+            <br>
+            <select (change)="searchByCategory($event)">
+                <option value="-1">All</option>
+                <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+            </select>
+        </th>
+    </tr>
+    <tr *ngFor="let product of result">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td><img src="assets/images/{{product.photo}}" width="120" height="100" (click)="details(product.id)"></td>
+        <td>{{product.category.id}}</td>
+        <td>{{product.category.name}}</td>
+    </tr>
+</table>
+
+<h3>Product Info</h3>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>{{product.id}}</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>{{product.name}}</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>{{product.price}}</td>
+    </tr>
+    <tr>
+        <td valign="top">Photo</td>
+        <td>
+            <img src="assets/images/{{product.photo}}" width="120" height="100">
+        </td>
+    </tr>
+    <tr>
+        <td>Category Id</td>
+        <td>{{product.category.id}}</td>
+    </tr>
+    <tr>
+        <td>Category Name</td>
+        <td>{{product.category.name}}</td>
+    </tr>
+</table>

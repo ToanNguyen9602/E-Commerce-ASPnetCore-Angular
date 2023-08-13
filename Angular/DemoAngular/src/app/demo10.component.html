@@ -1,0 +1,77 @@
+<h3>Register</h3>
+<form method="post" [formGroup]="registerForm" (ngSubmit)="save()">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td>
+                <input type="text" formControlName="username">
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" formControlName="password">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Description</td>
+            <td>
+                <textarea formControlName="description" cols="20" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Status</td>
+            <td>
+                <input type="checkbox" formControlName="status">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Gender</td>
+            <td>
+                <input type="radio" formControlName="gender" value="male"> Male
+                <br>
+                <input type="radio" formControlName="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Cert</td>
+            <td>
+                <ng-container *ngFor="let cert of certs">
+                    <input type="radio" formControlName="cert" value="{{cert.id}}"> {{cert.name}}
+                    <br>
+                </ng-container>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Role</td>
+            <td>
+                <select formControlName="role">
+                    <option *ngFor="let role of roles" value="{{role.id}}">{{role.name}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Photo</td>
+            <td>
+                <input type="file" (change)="selectFile($event)">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Address</td>
+            <td formGroupName="address">
+                Street <input type="text" formControlName="street">
+                <br>
+                Ward <input type="text" formControlName="ward">
+                <br>
+                District <input type="text" formControlName="district">
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Save">
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" formControlName="id">
+</form>

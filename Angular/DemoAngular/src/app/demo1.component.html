@@ -1,0 +1,29 @@
+<h3 class="format">Hello World</h3>
+<br>
+id: {{id}}
+<br>
+username: {{username}}
+<br>
+status: {{status}}
+<br>
+phone: {{phone}}
+<br>
+price: {{price}}
+<br>
+quantity: {{quantity}}
+<br>
+total: {{price * quantity}}
+<br>
+status: {{status ? 'show' : 'hide'}}
+<br>
+<img src="assets/images/thumb1.gif" width="120" height="100">
+<br>
+<img src="assets/images/{{photo}}" width="{{width}}" height="{{height}}">
+<br>
+<span class="format" *ngIf="status">Show</span>
+<br>
+<span class="format2" *ngIf="!status">Hide</span>
+<br><br>
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>

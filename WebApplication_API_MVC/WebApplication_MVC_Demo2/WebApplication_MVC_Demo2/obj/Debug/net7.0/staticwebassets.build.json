@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "ADInGQJjxo1ofNf/YahJMgObj2c7HJ2oqkFOyzpG7OU=",
+  "Source": "WebApplication_MVC_Demo2",
+  "BasePath": "_content/WebApplication_MVC_Demo2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication_MVC_Demo2\\wwwroot",
+      "Source": "WebApplication_MVC_Demo2",
+      "ContentRoot": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\",
+      "BasePath": "_content/WebApplication_MVC_Demo2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\6a3be7eb15e04be5b87b2cafc113a795.png",
+      "SourceId": "WebApplication_MVC_Demo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\",
+      "BasePath": "_content/WebApplication_MVC_Demo2",
+      "RelativePath": "images/6a3be7eb15e04be5b87b2cafc113a795.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6a3be7eb15e04be5b87b2cafc113a795.png"
+    },
+    {
+      "Identity": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb1.gif",
+      "SourceId": "WebApplication_MVC_Demo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\",
+      "BasePath": "_content/WebApplication_MVC_Demo2",
+      "RelativePath": "images/thumb1.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thumb1.gif"
+    },
+    {
+      "Identity": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb2.gif",
+      "SourceId": "WebApplication_MVC_Demo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\",
+      "BasePath": "_content/WebApplication_MVC_Demo2",
+      "RelativePath": "images/thumb2.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thumb2.gif"
+    },
+    {
+      "Identity": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\images\\thumb3.gif",
+      "SourceId": "WebApplication_MVC_Demo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebAPI - Node\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\WebApplication_MVC_Demo2\\wwwroot\\",
+      "BasePath": "_content/WebApplication_MVC_Demo2",
+      "RelativePath": "images/thumb3.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thumb3.gif"
+    }
+  ]
+}

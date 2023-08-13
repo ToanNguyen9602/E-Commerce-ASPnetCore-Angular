@@ -1,0 +1,33 @@
+<h3>One Way</h3>
+<input type="text" [ngModel]="msg1">
+<br>
+{{msg1}}
+
+<h3>Two Way</h3>
+<input type="text" [(ngModel)]="msg2">
+<br>
+{{msg2}}
+<br>
+<input type="button" value="Save" (click)="save()">
+
+<h3>Login</h3>
+Username <input type="text" [(ngModel)]="username">
+<br>
+Password <input type="password" [(ngModel)]="password">
+<br>
+<input type="button" value="Login" (click)="login()">
+<br>
+{{msg3}}
+
+<br>
+Toan <input type="text" [(ngModel)]="stoan">
+<br>
+Ly <input type="text" [(ngModel)]="sly">
+<br>
+Hoa <input type="text" [(ngModel)]="shoa">
+<br>
+<input type="button" value="Tinh" (click)="tinh()">
+<br>
+Dtb: {{dtb}}
+<br>
+Xep loai: xxx
